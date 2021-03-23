@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+.menu nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0 4px 0 32px;
+    height: 48px;
+    width: 260px;
+    position: relative;
+    right: 15px;
+}
+
+.menu nav ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.menu nav ul li img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.spacelogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 290px;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    max-width: 582px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.pesquisa input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    outline: none;
+    padding: 0 100px 0 60px;
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.fa-keyboard {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+}
+
+.fa-microphone {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.botoesPesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.searchGoogle, .lucky {
+    background: #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 35px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+.local {
+    width: 100%;
+    background: #f2f2f2;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #0000008a;
+}
+
+.menuFooter {
+    display: flex;
+    justify-content: space-evenly;
+    height: 46px;
+    width: 100%;
+    font-size: 15px;
+    background: #f2f2f2;
+    color: #0000008a;
+}
+
+.menuleft, .menuright {
+    display: flex;
+}
+
+.menuleft div, .menuright div {
+    padding: 15px;
+}
+
+@media (max-width:810px) {
+    .menuleft div:last-child {
+        margin-right: 15px;
+    }
+    .menuFooter {
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .local {
+        text-align: center;
+    }
+}
+
+@media (max-width:390px) {
+    .menuFooter {
+        flex: 1;
+        flex-wrap: wrap;
+    }
+    .menuleft, .menuright {
+        font-size: 13px;
+    }
+}
